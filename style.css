@@ -1,0 +1,49 @@
+.content{
+    padding:2%;
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+}
+
+
+.jumjum{
+    background-color: #ededed;
+}
+
+.bgCV{
+    background-color:#ededed ;
+}
+
+.cv{
+    padding : 3%;
+}
+
+.judulCV{
+    font-size: 50px;
+}
+
+.footer{
+    font-size: 10px;
+    color:white;
+    padding-bottom: 1px;
+}
+
+.UIdesc{
+    font-size: 30px;
+    padding-top: 2%;
+}
+
+.UIpic{
+    margin: 4%;
+}
+
+.containergovid{
+
+    width: 450px;
+    height: 725px;
+}
+
+.ytplayer{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
