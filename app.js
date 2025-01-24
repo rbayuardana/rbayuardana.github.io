@@ -33,7 +33,22 @@ $(document).ready(function(){
         columnWidth: '.gallery-item',  // Optional if you want all items to have the same width
         percentPosition: true          // Ensures that items use percentage-based widths
     });
+
+    document.addEventListener("scroll", function () {
+        const navbar = document.getElementById("nav");
+        const navcon = document.getElementById("navcon");
+        if (window.scrollY > 20) { // Adjust scroll threshold as needed
+          navbar.classList.add("scrolled");
+          navcon.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+          navcon.classList.remove("scrolled");
+        }
+    });
+      
     
+
+
 
 
 });
