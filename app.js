@@ -3,9 +3,19 @@ $(document).ready(function(){
 
     $('.nav-button-nav').on('click', function(event) {
       event.preventDefault(); // Prevent the default behavior of the link
-      var target = $(this).attr('href'); // Get the target section id from the href attribute
+      // var target = $(this).attr('href'); // Get the target section id from the href attribute
+      const target = $($(this).attr('href'));
+      const id = $(this).attr('href');
+      // console.log(id);
+      var offset = 0;
+      if(id != '#gallery'){
+        offset = $(window).height() / 2 - target.outerHeight() / 2
+      }else{
+        offset = 0;
+      }
       $('html, body').animate({
-        scrollTop: $(target).offset().top
+        
+        scrollTop: $(target).offset().top - offset
       }, 200); // Smoothly scroll to the target div over 800 milliseconds
     });
 
