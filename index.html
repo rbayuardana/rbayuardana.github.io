@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rbayuardana</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Fixed gradient background blobs -->
+  <div class="bg-stage" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">rbayuardana</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"       class="nav-link active">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#gallery"    class="nav-link">Gallery</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content glass-card">
+      <div class="hero-avatar">
+        <img src="assets/profilepicture.png" alt="Profile picture"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
+      </div>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Bayu Ardana</h1>
+      <p class="hero-tagline">Portfolio Manager, Tech Enthusiast, Digital Polymath.</p>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/rbayuardana" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/rbayuardana" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://instagram.com/rbayuardana" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll down</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <div class="about-outer">
+
+        <!-- Left: text card -->
+        <div class="glass-card">
+          <h2 class="section-title">About</h2>
+          <div class="about-body">
+            <p>I'm a Portfolio Manager with a background in both product and engineering, experienced in building and scaling early-stage platforms.</p>
+            <p>My experience spans from developing MVPs as a technical co-founder to leading cross-functional teams and operations in fast-paced environments. I've worked across product development, team building, and growth execution, often in ambiguous, zero-to-one settings.</p>
+            <p>In my most recent role, I led the relaunch and scaling of a platform from near-zero, managing teams of 50+ contributors and coordinating across multiple regions.</p>
+            <p>I enjoy working in environments where things are still being figured out—where I can help bring structure, clarity, and execution to complex problems.</p>
+          </div>
+        </div>
+
+        <!-- Right column: picture + stats stacked -->
+        <div class="about-left">
+
+          <div class="about-pic-box">
+            <img src="assets/about-img.png" alt="Bayu Ardana"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="about-pic-placeholder"><i class="fa-solid fa-user"></i></div>
+          </div>
+
+          <div class="about-stats glass-card">
+            <div class="stat-item">
+              <i class="fa-solid fa-rocket stat-icon"></i>
+              <div class="stat-text">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Startups Accelerated</span>
+              </div>
+            </div>
+            <div class="stat-item">
+              <i class="fa-solid fa-briefcase stat-icon"></i>
+              <div class="stat-text">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years of Industry Experience</span>
+              </div>
+            </div>
+            <div class="stat-item">
+              <i class="fa-solid fa-chart-line stat-icon"></i>
+              <div class="stat-text">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Portfolio Companies Managed</span>
+              </div>
+            </div>
+            <div class="stat-item">
+              <i class="fa-solid fa-users stat-icon"></i>
+              <div class="stat-text">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Team Members Led</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="section-container">
+      <div class="exp-outer">
+
+        <!-- Top-left: vertical category selector -->
+        <div class="glass-card exp-tabs-box">
+          <button class="exp-vtab active" data-tab="work">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Working</span>
+            <i class="fa-solid fa-chevron-right exp-vtab-arrow"></i>
+          </button>
+          <button class="exp-vtab" data-tab="edu">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Education</span>
+            <i class="fa-solid fa-chevron-right exp-vtab-arrow"></i>
+          </button>
+          <button class="exp-vtab" data-tab="vol">
+            <i class="fa-solid fa-heart"></i>
+            <span>Voluntary</span>
+            <i class="fa-solid fa-chevron-right exp-vtab-arrow"></i>
+          </button>
+        </div>
+
+        <!-- Bottom-left: square image, crossfades per tab -->
+        <div class="exp-img-box">
+          <div class="exp-img active" id="img-work">
+            <img src="assets/working-exp.png" alt="Working experience"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="exp-img-placeholder"><i class="fa-solid fa-briefcase"></i></div>
+          </div>
+          <div class="exp-img" id="img-edu">
+            <img src="assets/edu-exp.png" alt="Education"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="exp-img-placeholder"><i class="fa-solid fa-graduation-cap"></i></div>
+          </div>
+          <div class="exp-img" id="img-vol">
+            <img src="assets/vol-exp.png" alt="Voluntary experience"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="exp-img-placeholder"><i class="fa-solid fa-heart"></i></div>
+          </div>
+        </div>
+
+        <!-- Right: experience detail panel -->
+        <div class="glass-card exp-right" id="exp-right">
+          <h2 class="section-title">Experience</h2>
+
+          <div class="exp-right-scroll" id="exp-right-scroll">
+            <!-- List view (rendered by JS) -->
+            <div class="exp-list-view" id="exp-list-view"></div>
+
+            <!-- Detail view -->
+            <div class="exp-detail-view hidden" id="exp-detail-view">
+              <button class="exp-back-btn" id="exp-back-btn">
+                <i class="fa-solid fa-arrow-left"></i> Back
+              </button>
+              <div id="exp-detail-content"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="section-container">
+      <div class="glass-card">
+        <h2 class="section-title">Skills</h2>
+        <div id="skills-groups"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="section-container">
+      <div class="glass-card gallery-card">
+        <h2 class="section-title">Gallery</h2>
+
+        <div class="gallery-tabs" role="tablist">
+          <button class="gallery-tab active" data-tab="photos" role="tab" aria-selected="true">Photography</button>
+          <button class="gallery-tab" data-tab="videos" role="tab" aria-selected="false">Film &amp; Video</button>
+        </div>
+
+        <!-- Photos pane -->
+        <div class="gallery-pane active" id="gallery-photos" role="tabpanel">
+          <div class="gallery-desc">
+            <span class="gallery-desc-label">(noun)</span>
+            <p class="gallery-desc-text">a collection of <span class="gallery-desc-hi">well curated</span> (not so professional) pictures taken by me, a not so professional <span class="gallery-desc-hi">photographer.</span></p>
+          </div>
+          <div class="photo-grid-wrap" id="photo-grid-wrap">
+            <div class="photo-grid" id="photo-grid"></div>
+          </div>
+          <button class="gallery-expand-btn" id="photo-expand-btn">
+            <span>See More</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+
+        <!-- Videos pane -->
+        <div class="gallery-pane" id="gallery-videos" role="tabpanel">
+          <div class="gallery-desc">
+            <span class="gallery-desc-label">(noun)</span>
+            <p class="gallery-desc-text">a collection of past <span class="gallery-desc-hi">film projects</span> dating back to 2018. i really like to do these stuff back in the day.</p>
+          </div>
+          <div class="video-grid" id="video-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div class="lb-overlay" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <button class="lb-close" id="lb-close" aria-label="Close">&#x2715;</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">&#x2039;</button>
+    <div class="lb-content">
+      <img class="lb-img" id="lb-img" src="" alt="">
+      <p class="lb-title" id="lb-title"></p>
+    </div>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">&#x203a;</button>
+  </div>
+
+  <!-- Video modal -->
+  <div class="lb-overlay" id="video-modal" aria-hidden="true" role="dialog" aria-label="Video player">
+    <button class="lb-close" id="vm-close" aria-label="Close">&#x2715;</button>
+    <div class="video-embed-wrap">
+      <iframe id="yt-frame" src="" allow="autoplay; encrypted-media" allowfullscreen title="YouTube video"></iframe>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="glass-card">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-sub">Have something in mind? Let's talk.</p>
+        <form class="contact-form" id="contact-form">
+          <input type="hidden" name="access_key" value="43e0ba4b-c967-4cb4-b31a-c9bebf3d3772" />
+          <input type="hidden" name="subject" value="New message from portfolio" />
+          <input type="hidden" name="from_name" value="rbayuardana Portfolio" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating contact button -->
+  <button class="fab" id="fab" aria-label="Contact me" onclick="scrollToContact()">
+    <i class="fa-solid fa-envelope"></i>
+    <span class="fab-label">Contact</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
