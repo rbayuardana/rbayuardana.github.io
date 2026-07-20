@@ -24,12 +24,25 @@ const hamburger = document.getElementById('hamburger');
 const navLinks   = document.getElementById('nav-links');
 hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('.nav-link').forEach(l =>
-  l.addEventListener('click', () => navLinks.classList.remove('open'))
+  l.addEventListener('click', e => {
+    e.preventDefault();
+    navLinks.classList.remove('open');
+    const target = document.getElementById(l.getAttribute('href').slice(1));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    history.replaceState(null, '', location.pathname);
+  })
 );
+
+// Strip hash if page is loaded with one (e.g. shared link)
+if (location.hash) {
+  const target = document.getElementById(location.hash.slice(1));
+  if (target) target.scrollIntoView({ behavior: 'smooth' });
+  history.replaceState(null, '', location.pathname);
+}
 
 // Highlight active nav link by scroll position
 function updateActiveLink() {
-  const ids    = ['home', 'about', 'experience', 'gallery', 'contact'];
+  const ids    = ['home', 'about', 'experience', 'skills', 'gallery', 'contact'];
   const scrollY = window.scrollY + 100;
 
   ids.forEach(id => {

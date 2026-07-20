@@ -910,7 +910,7 @@ body.dark .exp-vtab:hover:not(.active) {
   }
 
   .exp-tabs-box {
-    grid-column: 1; grid-row: 1;
+    grid-column: 1; grid-row: 2;
     flex-direction: row;
     padding: 10px;
   }
@@ -926,7 +926,7 @@ body.dark .exp-vtab:hover:not(.active) {
   .exp-vtab-arrow { display: none; }
 
   .exp-img-box {
-    grid-column: 1; grid-row: 2;
+    grid-column: 1; grid-row: 1;
     aspect-ratio: 1 / 1;
     width: 100%;
     max-width: 480px;
@@ -1092,6 +1092,12 @@ body.dark .form-group textarea:focus {
   .form-row       { grid-template-columns: 1fr; }
   .fab-label      { display: none; }
   .fab            { padding: 16px; border-radius: 50%; }
+
+  .hero-content   { width: 100%; max-width: 100%; padding: 36px 24px; }
+  .hero-name      { white-space: normal; font-size: clamp(2rem, 10vw, 3.2rem); }
+  .hero-tagline   { white-space: normal; }
+
+  .section        { padding: 28px 16px; }
 }
 
 /* ─── Gallery ────────────────────────────────────────────────────────────── */
